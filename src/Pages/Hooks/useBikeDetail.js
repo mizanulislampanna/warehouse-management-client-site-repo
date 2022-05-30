@@ -5,7 +5,7 @@ const useBikeDetail = (bikeId) => {
   console.log(bikes);
 
   useEffect(() => {
-    const url = `http://localhost:5000/bike/${bikeId}`;
+    const url = `https://serene-savannah-36871.herokuapp.com/bike/${bikeId}`;
     console.log(url);
     fetch(url)
       .then((res) => res.json())
